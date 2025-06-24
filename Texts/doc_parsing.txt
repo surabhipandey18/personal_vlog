@@ -1,0 +1,71 @@
+Excellent Surabhi — let’s stay fully focused on **only the coding workflow** for your **Document Parsing Module**:
+
+---
+
+# 🚀 **Document Parsing Coding Workflow**
+
+---
+
+### 1️⃣ **File Upload (via Streamlit)**
+
+* Allow user to upload PDF, DOCX, TXT files.
+* Capture the file path / file object.
+
+---
+
+### 2️⃣ **File Type Detection**
+
+* Check uploaded file extension.
+* Decide parser based on file type:
+
+  * PDF → PyMuPDF
+  * DOCX → python-docx
+  * TXT → simple read()
+
+---
+
+### 3️⃣ **Parsing Logic for Each File Type**
+
+* Write separate parser functions:
+
+  * `extract_text_from_pdf(file_path)`
+  * `extract_text_from_docx(file_path)`
+  * `extract_text_from_txt(file_path)`
+
+---
+
+### 4️⃣ **Clean Extracted Text**
+
+* Remove:
+
+  * Extra spaces
+  * Empty lines
+  * Headers/Footers (if needed)
+
+---
+
+### 5️⃣ **Chunking the Text**
+
+* Split extracted text into smaller chunks (e.g. 500 words per chunk).
+* Use for embedding & summarization.
+
+---
+
+### 6️⃣ **Save Parsed Text (Optional)**
+
+* Save extracted text to:
+
+  * Local disk (`.txt` files)
+  * Or directly pass to next module
+
+---
+
+### 7️⃣ **Pass Cleaned Chunks to Embeddings Module**
+
+* Once parsing & chunking is complete, return:
+
+  * Full text
+  * Chunk list
+
+---
+

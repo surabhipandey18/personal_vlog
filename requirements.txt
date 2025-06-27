@@ -2,8 +2,9 @@ streamlit
 sentence-transformers
 faiss-cpu
 pymupdf
+fitz
 whisper
 transformers
 pydub
 python-dotenv
-docx
+python-docx

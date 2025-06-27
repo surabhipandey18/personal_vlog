@@ -1,10 +1,9 @@
 import fitz
 import streamlit as st
 import re
-import docx
 import warnings
+from docx import Document
 warnings.filterwarnings("ignore", category=UserWarning, module='docx')
-from docx import Document 
 
 def clean_text(text):
     # Replace all whitespace (including newlines, tabs) with a single space

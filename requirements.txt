@@ -6,3 +6,4 @@ whisper
 transformers
 pydub
 python-dotenv
+docx
